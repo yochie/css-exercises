@@ -7,8 +7,9 @@
 .container {
   text-align: center;
   display: grid;
-  grid-template: auto auto auto auto / 1fr 4fr; 
+  grid-template: auto auto 1fr auto / 1fr 4fr; 
   gap: 4px;
+  min-height: 100vh;
 }
 
 .container div {
@@ -76,6 +77,11 @@
 
 .article {
   background-color: #bccbde;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  align-items: start;
+  align-content: start;
 }
 
 .article p {
