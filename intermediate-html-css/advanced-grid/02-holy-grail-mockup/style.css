@@ -32,10 +32,15 @@
   justify-self: left;
 }
 
+.menu {
+  overflow-x: auto ;
+}
+
 .menu ul,
 .nav ul {
   display: grid;
   grid-auto-flow: column;
+  gap: 5px;
 }
 
 .menu ul,
